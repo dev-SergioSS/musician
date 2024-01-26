@@ -1419,6 +1419,7 @@ h3 {
 
   .benefits {
     background: linear-gradient(180deg, #F5F4F4 0%, #F8F7F7 100%);
+    margin-bottom: 0;
   }
 
   .benefits__wrap {
@@ -1659,8 +1660,10 @@ h3 {
   }
 
   .benefits__photo {
-    flex: 0 0 350px;
+    flex: 1 1 auto;
     min-height: auto;
+    width: 100%;
+    aspect-ratio: 335/350;
   }
 
   .benefits__title {
@@ -1679,6 +1682,7 @@ h3 {
   .about-me__img {
     width: calc(100% + 40px);
     margin-left: -20px;
+    aspect-ratio: 335/350;
   }
 
   .about-me__img_1 {
@@ -1728,6 +1732,9 @@ h3 {
 
 @media (max-width: 480px) {
   .intro__photo {
-    min-height: 370px;
+    aspect-ratio: 335/370;
+    width: 100%;
+    min-height: auto;
+    background: url("../img/about-me-mobile.jpg") center 0/cover no-repeat;
   }
 }
